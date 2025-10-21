@@ -11,6 +11,6 @@ router.get('/', (req,res) => {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-api.use('/.netlify/functions/', router);
+api.use("/api/", router);
 
 export const handler = serverless(api);
