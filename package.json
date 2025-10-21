@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "netlify/functions/app.js",
+  "main": "netlify/functions/api.js",
   "scripts": {},
   "dependencies": {
     "@netlify/functions": "^5.0.0",
