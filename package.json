@@ -2,19 +2,13 @@
   "name": "necro_portfolio",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/TheCyanCreeper/Necro-Portfolio#readme",
-  "bugs": {
-    "url": "https://github.com/TheCyanCreeper/Necro-Portfolio/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheCyanCreeper/Necro-Portfolio.git"
-  },
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "netlify/functions/api.js",
-  "scripts": {},
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "@netlify/functions": "^5.0.0",
     "@types/express": "^5.0.3",
