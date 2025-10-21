@@ -15,12 +15,13 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-"start": "./node_modules/.bin/netlify-lambda serve src",
-"build": "./node_modules/.bin/netlify-lambda build src"
-},
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
+  },
   "dependencies": {
     "@netlify/functions": "^5.0.0",
     "@types/express": "^5.0.3",
+    "events": "^3.3.0",
     "express": "^5.1.0",
     "netlify-lambda": "^2.0.16",
     "serverless-http": "^4.0.0"
