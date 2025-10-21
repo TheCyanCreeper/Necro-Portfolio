@@ -18,16 +18,16 @@
 import express, { Router } from "express";
 import serverless from "serverless-http";
 
-const api = express();
+const app = express();
 
 const router = Router();
 router.get("/hello", (req, res) => res.send("Hello World!"));
 app.use(express.static(__dirname + '/public'))
 
 router.get('/', (req,res) => {
-  res.sendFile(path.join(__dirname + '/index.html'));
+  res.sendFile('/index.html');
 });
 
-api.use("/", router);
+app.use("/", router);
 
-export const handler = serverless(api);
+export const handler = serverless(app);
