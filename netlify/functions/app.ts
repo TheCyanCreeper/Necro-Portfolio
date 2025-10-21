@@ -22,7 +22,12 @@ const api = express();
 
 const router = Router();
 router.get("/hello", (req, res) => res.send("Hello World!"));
+app.use(express.static(__dirname + '/public'))
 
-api.use("/api/", router);
+router.get('/', (req,res) => {
+  res.sendFile(path.join(__dirname + '/index.html'));
+});
+
+api.use("/", router);
 
 export const handler = serverless(api);
